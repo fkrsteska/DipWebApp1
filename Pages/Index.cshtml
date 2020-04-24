@@ -1,0 +1,104 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="container">
+        <div class="content-page">
+            <div class="content" id="master_page_content" style="padding-top: 0px">
+                <!--Coarousel-->
+                <div id="homeMainSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#homeMainSlider" data-slide-to="0" class="active">
+                            ::before
+                            ::after
+                        </li>
+                        <li data-target="#homeMainSlider" data-slide-to="1" class="active">
+                            ::before
+                            ::after
+                        </li>
+                        <li data-target="#homeMainSlider" data-slide-to="2" class="active">
+                            ::before
+                            ::after
+                        </li>
+                    </ol>
+                    <div class="carusel-inner">
+                        <div class="carousel-item">
+                            <img class="d-none d-md-block w-100" src="~/pic/original.jpg" alt="First slide"/> 
+                            <img class="d-block d-md-none w-100" src="~/pic/original.jpg" alt="First slide" />
+                            <div class="carousel-caption-left2">
+                                <h3>Работно време</h3>
+                                <hr />
+                                <p class="pt-2 pt-lg-4">
+                                    <a href="" class="btn btn-info btn-lg">Дознај повеќе</a> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-none d-md-block w-100" src="~/pic/fresh.jpg" alt="First slide" />
+                            <img class="d-block d-md-none w-100" src="~/pic/fresh.jpg" alt="First slide" />
+                            <div class="carousel-caption-left2">
+                                <h3>Работно време</h3>
+                                <hr />
+                                <p class="pt-2 pt-lg-4">
+                                    <a href="" class="btn btn-info btn-lg">Дознај повеќе</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-none d-md-block w-100" src="~/pic/original.jpg" alt="Second slide" />
+                            <img class="d-block d-md-none w-100" src="~/pic/original.jpg" alt="Second slide" />
+                            <div class="carousel-caption-left2">
+                                <h3>Работно време</h3>
+                                <hr />
+                                <p class="pt-2 pt-lg-4">
+                                    <a href="" class="btn btn-info btn-lg">Дознај повеќе</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#homeMainSlider" role="button" data-slide="prev">
+                        <span aria-hidden="true" class="slider-arrows">
+                            <i class="mdi mdi-chevron-left"> ::before </i>
+                        </span>
+                        <span class="sr-only">Претходно</span>
+                    </a>
+                    <a class="carousel-control-next" href="#homeMainSlider" role="button" data-slide="next">
+                        <span class="slider-arrows" aria-hidden="true">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </span>
+                        <span class="sr-only">Наредно</span>
+                    </a>
+                </div>
+                <!--End Coarousel-->
+                <div class="home-what-i-need">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 block-title">
+                                <h3 class="mb-2 mt-1"> ШТО МИ ТРЕБА?</h3>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row mt-3">
+                                    <div class="col-4 m-sm-1 text-center">
+                                        <a class="" asp-area="" asp-page="/Health/Organizations"><img border="0" src="~/pic/health.png" width="100" height="100"/>HEALTH </a>
+                                    </div>
+                                    <div class="col-4 m-sm-1 text-center">
+                                        <a class="" asp-area="" asp-page="/Food/Organizations"><img border="0" src="~/pic/food.png" width="100" height="100" />FOOD</a>
+                                    </div>
+                                    <div class="col-4 m-sm-1 text-center">
+                                        <a class="win-icon" asp-area="" asp-page="/Transport/Transport"><img border="0" src="~/pic/transport.png" width="100" height="100" />TRANSPORT</a>
+                                    </div>
+                                    <div class="col-4 m-sm-1 text-center">
+                                        <a href="#" class="win-icon"><img border="0" src="~/pic/transport.png" width="100" height="100" />TECHNOLOGY</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>  -->
+    </div>
